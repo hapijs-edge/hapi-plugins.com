@@ -1,0 +1,22 @@
+{
+  "name": "hapi-plugins.com",
+  "main": "index.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/hapijs-edge/hapi-plugins.com",
+  "authors": [
+    "Ben Acker <benacker@gmail.com>",
+    "Daniel Bretoi <daniel@bretoi.com>",
+    "Van Nguyen <thegoleffect@gmail.com>",
+    "Wyatt Preul <wpreul@gmail.com>"
+  ],
+  "description": "Searchable database of hapi plugins",
+  "license": "ISC",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
