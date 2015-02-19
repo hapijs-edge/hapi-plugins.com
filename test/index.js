@@ -21,4 +21,12 @@ describe('Hapi Plugins', function () {
            done();
        });
    });
+
+   it('can like a plugin', function (done) {
+       HapiPlugins.init(function (err, server) {
+           expect(err).to.not.exist();
+           expect(server).to.exist();
+           done();
+       });
+   });
 });
