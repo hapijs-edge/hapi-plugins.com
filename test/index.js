@@ -33,8 +33,8 @@ describe('Hapi Plugins', function () {
 
            server.inject(options, function (err, result) {
 
-               console.log(err);
-               console.log(result);
+               // console.log(err);
+               // console.log(result);
                expect(err).to.not.exist();
                expect(server).to.exist();
                done();

@@ -1,5 +1,5 @@
 test:
-	@node node_modules/lab/bin/lab -a code -v
+	@DEV=1 node node_modules/lab/bin/lab -a code -v
 test-tap:
 	@node node_modules/lab/bin/lab -a code -r tap -o tests.tap
 test-cov:
