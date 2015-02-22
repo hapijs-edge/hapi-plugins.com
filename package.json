@@ -41,6 +41,7 @@
     "glob": "^4.3.5",
     "handlebars": "^3.0.0",
     "hapi": "^8.2.0",
+    "hapi-auth-cookie": "^2.0.0",
     "hoek": "^2.11.0",
     "joi": "^5.1.0",
     "mongoose": "^3.8.23",
