@@ -65,4 +65,5 @@ describe('Hapi Plugins', function () {
 
         });
     });
+>>>>>>> 00fa59dde51cd2bc90f6b50103a73c6e1d790d9b
 });
