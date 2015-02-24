@@ -12,18 +12,17 @@ var lab = exports.lab = Lab.script();
 var describe = lab.describe;
 var it = lab.it;
 var expect = Code.expect;
-var beforeEach = lab.beforeEach;
 
 
 describe('Hapi Plugins', function () {
 
-    beforeEach(function (done) {
+    var resetDb = function (callback) {
         DB.plugin.remove(function (err) {
             DB.user.remove(function (err) {
-                done();
+                callback();
             });
         });
-    });
+    };
 
     it('Server can be started', function (done) {
         HapiPlugins.init(function (err, server) {
@@ -34,35 +33,32 @@ describe('Hapi Plugins', function () {
     });
 
     it('can like a plugin', function (done) {
+        resetDb(function () {
+            HapiPlugins.init(function (err, server) {
+                var plugin =  DB.plugin({
+                    name: 'purdy',
+                    license: 'MIT',
+                    version: '1.0.1',
+                    description: 'a niceties plugin',
+                    authors: ['daniel']
+                });
 
-        HapiPlugins.init(function (err, server) {
+                var options = {
+                    url: '/plugins/purdy/like',
+                    method: 'GET'
+                };
 
-            var plugin =  DB.plugin({
-                name: 'purdy',
-                license: 'MIT',
-                version: '1.0.1',
-                description: 'a niceties plugin',
-                authors: ['daniel']
-            });
-
-            var options = {
-                url: '/plugins/purdy/like',
-                method: 'GET'
-            };
-
-            plugin.save(function (err) {
-
-                expect(err).to.not.exist();
-
-                server.inject(options, function (response) {
-
+                plugin.save(function (err) {
                     expect(err).to.not.exist();
-                    expect(response.result.success).to.equal(true);
-                    expect(server).to.exist();
-                    done();
+
+                    server.inject(options, function (response) {
+                        expect(err).to.not.exist();
+                        expect(response.result.success).to.equal(true);
+                        expect(server).to.exist();
+                        done();
+                    });
                 });
             });
-
         });
     });
 });
