@@ -40,6 +40,10 @@ input.searchBox {
     color: #484848;
 }
 
+.plugins-topcharts {
+    float: right;
+}
+
 a.emphasis {
     color: #6633cc;
     font-weight: bold;
