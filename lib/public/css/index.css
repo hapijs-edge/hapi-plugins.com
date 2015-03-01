@@ -11,7 +11,7 @@ header {
 }
 
 header .container {
-    width: 720px;
+    /*width: 720px;*/
     margin: 0px auto;
     text-align: center;
 }
@@ -23,6 +23,7 @@ header .container {
 
 input.searchBox {
     width: 600px;
+    /*width: 100%;*/
     font-size: 18px;
     padding: 12px 20px 12px 10px;
 }
@@ -70,9 +71,8 @@ input.searchBox {
     padding-top: 10px;
 }
 
-.plugins-topcharts {
-    float: right;
-}
+
+
 
 a.emphasis {
     color: #6633cc;
@@ -95,3 +95,17 @@ footer {
     font-style: italic;
     color: #ddd;
 }
+
+
+
+/*@media (min-width: @screen-md-min) {
+    .plugins-topcharts {
+        float: right;
+    }
+    .faq {
+        float: left;
+    }
+    input.searchBox {
+        width: 600px;
+    }
+}*/
