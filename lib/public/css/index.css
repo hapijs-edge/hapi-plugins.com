@@ -31,7 +31,7 @@ input.searchBox {
     text-align: center;
 }
 
-.search-info {
+.search-info, .results-section {
     margin-top: 25px;
     background-color: #fff;
     border: 1px solid #ddd;
