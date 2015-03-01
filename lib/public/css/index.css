@@ -66,6 +66,10 @@ input.searchBox {
     color: #484848;
 }
 
+.results-section {
+    padding-top: 10px;
+}
+
 .plugins-topcharts {
     float: right;
 }
