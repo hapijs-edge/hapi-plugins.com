@@ -4,7 +4,8 @@
   "description": "Searchable database of hapi plugins",
   "main": "index.js",
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "start": "node index"
   },
   "repository": {
     "type": "git",
@@ -40,6 +41,8 @@
     "blipp": "^2.1.0",
     "boom": "^2.6.1",
     "glob": "^4.3.5",
+    "good": "^6.1.0",
+    "good-console": "^5.0.0",
     "handlebars": "^3.0.0",
     "hapi": "^8.2.0",
     "hapi-auth-cookie": "^2.0.0",
@@ -58,7 +61,7 @@
   "devDependencies": {
     "code": "^1.3.0",
     "jsx-loader": "^0.12.2",
-    "lab": "^5.2.1",
+    "lab": "^5.4.0",
     "style-loader": "^0.8.3",
     "webpack": "^1.5.3"
   }
