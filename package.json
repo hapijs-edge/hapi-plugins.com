@@ -35,6 +35,7 @@
   },
   "homepage": "https://hapi-plugins.com",
   "dependencies": {
+    "actin": "0.0.1",
     "apollo-cassandra": "^1.0.4",
     "async": "^0.9.0",
     "bell": "^2.1.0",
