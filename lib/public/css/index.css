@@ -12,6 +12,11 @@ header {
     overflow: hidden;
 }
 
+.book-cover {
+    width: 180px;
+    margin-bottom: 15px;
+}
+
 header .container {
     /*width: 720px;*/
     margin: 0px auto;
@@ -90,7 +95,7 @@ footer {
     /*margin-top: 35px;*/
 }
 
-#finalfrontier {
+#finalfrontier, #copyright {
     /*margin-top: 15px;*/
     padding: 15px;
     text-align: center;
