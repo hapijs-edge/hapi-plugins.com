@@ -99,6 +99,28 @@ footer {
 }
 
 
+#searchResults thead td {
+    cursor: pointer;
+}
+.ascending, .descending {
+    font-weight: bold;
+}
+
+.sortable.ascending::after {
+    content: '▲';
+    margin-left: 12px;
+}
+.sortable.descending::after {
+    content: '▼';
+    margin-left: 12px;
+}
+
+.downloadCount {
+    font-style: italic;
+    color: #777;
+    font-size: 12px;
+    padding-left: 6px;
+}
 
 /*@media (min-width: @screen-md-min) {
     .plugins-topcharts {
