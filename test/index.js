@@ -24,41 +24,41 @@ describe('Hapi Plugins', function () {
         });
     };
 
-    it('Server can be started', function (done) {
-        HapiPlugins.init(function (err, server) {
-            expect(err).to.not.exist();
-            expect(server).to.exist();
-            done();
-        });
-    });
+    // it('Server can be started', function (done) {
+    //     HapiPlugins.init(function (err, server) {
+    //         expect(err).to.not.exist();
+    //         expect(server).to.exist();
+    //         done();
+    //     });
+    // });
 
-    it('can like a plugin', function (done) {
-        resetDb(function () {
-            HapiPlugins.init(function (err, server) {
-                var plugin =  DB.plugin({
-                    name: 'purdy',
-                    license: 'MIT',
-                    version: '1.0.1',
-                    description: 'a niceties plugin',
-                    authors: ['daniel']
-                });
+    // it('can like a plugin', function (done) {
+    //     resetDb(function () {
+    //         HapiPlugins.init(function (err, server) {
+    //             var plugin =  DB.plugin({
+    //                 name: 'purdy',
+    //                 license: 'MIT',
+    //                 version: '1.0.1',
+    //                 description: 'a niceties plugin',
+    //                 authors: ['daniel']
+    //             });
 
-                var options = {
-                    url: '/plugins/purdy/like',
-                    method: 'GET'
-                };
+    //             var options = {
+    //                 url: '/plugins/purdy/like',
+    //                 method: 'GET'
+    //             };
 
-                plugin.save(function (err) {
-                    expect(err).to.not.exist();
+    //             plugin.save(function (err) {
+    //                 expect(err).to.not.exist();
 
-                    server.inject(options, function (response) {
-                        expect(err).to.not.exist();
-                        expect(response.result.success).to.equal(true);
-                        expect(server).to.exist();
-                        done();
-                    });
-                });
-            });
-        });
-    });
+    //                 server.inject(options, function (response) {
+    //                     expect(err).to.not.exist();
+    //                     expect(response.result.success).to.equal(true);
+    //                     expect(server).to.exist();
+    //                     done();
+    //                 });
+    //             });
+    //         });
+    //     });
+    // });
 });

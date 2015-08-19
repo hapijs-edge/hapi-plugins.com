@@ -5,7 +5,6 @@ dump.rdb
 node_modules
 results.tap
 results.xml
-config.json
 .DS_Store
 */.DS_Store
 */*/.DS_Store

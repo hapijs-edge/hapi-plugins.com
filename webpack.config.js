@@ -1,13 +1,6 @@
 var Config = require('./config.json');
 var Webpack = require('webpack');
 
-var commonsPlugin = new Webpack.optimize.CommonsChunkPlugin('./common.js');
-
-var definePlugin = new Webpack.DefinePlugin({
-    __DEV__: JSON.stringify(Config.environment.dev || 'true'),
-    __PRERELEASE__: JSON.stringify(Config.environment.prerelease || 'false')
-});
-
 module.exports = {
     // Entry(points) are like diff endpoints/routes that might load the SPA
     entry: {
@@ -26,8 +19,5 @@ module.exports = {
             { test: /\.css$/, loader: 'style-loader!css-loader'}
         ]
     },
-    plugins: [
-        definePlugin,
-        commonsPlugin
-    ]
+    plugins: []
 };

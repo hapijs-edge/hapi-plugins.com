@@ -2,7 +2,8 @@
 
 var Code = require('code');
 var Lab = require('lab');
-var NpmDownloads = require('../../../lib/models/npm/downloads');
+var DownloadsModel = require('../../../lib/models/npm/downloads');
+var NpmDownloads = new DownloadsModel();
 
 
 // Test shortcuts

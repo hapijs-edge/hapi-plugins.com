@@ -1,0 +1,9 @@
+{
+    "database": {
+        "mongodb": {
+            "username": "hapi",
+            "password": "password12345",
+            "host": "dogen.mongohq.com:10064/hapi-plugins-public"
+        }
+    }
+}
