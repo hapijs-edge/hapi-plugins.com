@@ -13,3 +13,4 @@ results.xml
 */*/._*
 coverage.*
 sftp-config.json
+config-production.json
