@@ -28,6 +28,7 @@ This application was built from the beginning as open-source. Go ahead: Fork it 
 
 - [Quick Start](#quick-start)
 - [Options](#options)
+- [Troubleshooting](#troubleshooting)
 - [License](#license)
 
 # Quick Start
@@ -39,7 +40,7 @@ npm install
 npm run start
 ```
 
-Then, open your browser to `http://localhost:8080` to view your local copy of the web application.
+Then, open your browser to `http://localhost:8080` to view your local copy of the web application. The first time a query is searched, it will take a few seconds and subsequent re-searches will feel instantaneous after the cache is warmed up.
 
 # Options
 
@@ -53,8 +54,24 @@ Then, open your browser to `http://localhost:8080` to view your local copy of th
 ## Config.json
 
 - `port`
+    - The port to run the web server (defaults to 8080).
 - `apiPort`
+    - DEPRECATED: The port to run the api server (defaults to 8088).
 - `database`
+    - `mongodb`
+        - `host`
+            - The mongodb host connection string (defaults to public mongodb).
+        - `username`
+            - The username with which to connect to the host.
+        - `password`
+            - The password with which to connect to the host.
+
+
+# Troubleshooting
+
+## The search results are always empty
+
+If the search results are empty and you are using the public mongodb instance, most likely some troll deleted everything. To repopulate visit `HOST + '/admin/plugins/populate/source'` in your browser where HOST is how you normally connect to hapi-plugins (default is `http://localhost:8080`).
 
 
 # License
