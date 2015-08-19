@@ -18,7 +18,7 @@
 [Hapi-Plugins.com](https://hapi-plugins.com) is a searchable database of [Hapi.js](http://hapijs.com/) plugins. It was made for the book [Developing a hapi Edge](http://shop.oreilly.com/product/9781939902207.do) by:
 
 - [Van Nguyen](https://twitter.com/thegoleffect)
-- Daniel Bretoi
+- [Daniel Bretoi](https://twitter.com/Eydaimon)
 - [Wyatt Preul](https://twitter.com/wpreul)
 - [Lloyd Benson](https://twitter.com/LloydWith2Ls)
 
