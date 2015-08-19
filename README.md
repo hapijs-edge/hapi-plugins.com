@@ -69,7 +69,7 @@ Then, open your browser to `http://localhost:8080` to view your local copy of th
 
 # Troubleshooting
 
-## The search results are always empty
+### The search results are always empty
 
 If the search results are empty and you are using the public mongodb instance, most likely some troll deleted everything. To repopulate visit `HOST + '/admin/plugins/populate/source'` in your browser where HOST is how you normally connect to hapi-plugins (default is `http://localhost:8080`).
 
